@@ -1,0 +1,18 @@
+# Input abstraction for rotary encoders and buttons
+
+def read_encoder():
+    """
+    Returns:
+        1  -> clockwise rotation
+       -1  -> counter-clockwise rotation
+        0  -> no movement
+    """
+    return 0  # placeholder
+
+def read_button():
+    """
+    Returns:
+        True if button pressed
+        False otherwise
+    """
+    return False  # placeholder
