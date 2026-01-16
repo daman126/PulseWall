@@ -1,0 +1,29 @@
+# System Diagram
+
+This document describes the high-level architecture of PulseWall and how its components interact.
+
+---
+
+## System Overview
+
+PulseWall is an always-on, wall-powered device built around a Raspberry Pi Pico W and an e-ink display. User interaction is handled using physical rotary knobs.
+
+---
+
+## Components
+
+- Raspberry Pi Pico W  
+- SPI e-ink display  
+- Two rotary encoders with push buttons  
+- USB wall power supply  
+
+---
+
+## Data and Control Flow
+
+```text
+Wall Power (USB 5V)
+        ↓
+Raspberry Pi Pico W
+        ↓
+E-Ink Display (SPI)
