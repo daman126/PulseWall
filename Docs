@@ -1,0 +1,70 @@
+# Screen Flow
+
+This document describes how users navigate PulseWall using the rotary knobs.
+
+---
+
+## Screens
+
+PulseWall contains four primary screens:
+
+1. Home – displays current time and date  
+2. Weather – displays current weather conditions  
+3. Calendar – displays today’s calendar events  
+4. Motivation – displays a motivational quote and the time  
+
+---
+
+## Default State
+
+- On power-up, PulseWall always starts on the Home screen.
+- The Home screen is considered the default screen.
+
+---
+
+## Knob Interaction
+
+### Primary Knob (Screen Navigation)
+
+- Rotate clockwise → move to the next screen
+- Rotate counter-clockwise → move to the previous screen
+- Screen order:
+
+### Secondary Knob (Content Control)
+
+- On Calendar screen:
+- Rotate → scroll through events for the day
+- On Motivation screen:
+- Rotate → cycle through saved quotes
+- On Home and Weather screens:
+- Rotation has no effect
+
+### Knob Press
+
+- Pressing a knob triggers a screen refresh and updates data if available.
+
+---
+
+## Inactivity Behavior
+
+- PulseWall tracks the time since the last user interaction.
+- If no interaction occurs for 5 minutes:
+- The display automatically returns to the Home screen.
+- The inactivity timer resets on any knob rotation or press.
+
+---
+
+## Notes
+
+- Screen changes cause a full e-ink refresh.
+- Time updates are handled locally without refreshing the display every second.
+
+[ Home ]
+   ↓
+[ Weather ]
+   ↓
+[ Calendar ]
+   ↓
+[ Motivation ]
+   ↓
+[ Home ]
