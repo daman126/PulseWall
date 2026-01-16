@@ -1,0 +1,43 @@
+# Power Plan
+
+This document describes how PulseWall is powered and how power usage is managed during operation.
+
+---
+
+## Power Source
+
+PulseWall is powered using a standard 5V USB wall adapter.  
+Power is supplied directly to the Raspberry Pi Pico W through its USB port.
+
+This allows the device to remain always-on without the need for batteries or charging circuitry.
+
+---
+
+## Display Power Considerations
+
+An e-ink display is used because it retains its image without requiring constant power.
+
+- Power is primarily consumed during screen refreshes
+- Static content does not consume power once drawn
+- This makes the display well-suited for an always-on wall device
+
+---
+
+## System Operation
+
+- The Pico W runs continuously while powered
+- Screen updates occur only when:
+  - The user changes screens
+  - New weather or calendar data is fetched
+  - The system returns to the home screen after inactivity
+- Timekeeping is handled locally without constant screen refreshes
+
+---
+
+## Update Frequency
+
+To avoid unnecessary power usage and network activity:
+
+- Weather data is updated periodically (e.g. every 30–60 minutes)
+- Calendar data is updated on boot and periodically afterward
+- Screen refre
