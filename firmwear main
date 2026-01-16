@@ -1,0 +1,44 @@
+# PulseWall main loop
+# Planning-phase firmware (hardware not yet connected)
+
+import time
+from screens import draw_screen
+from input import read_encoder, read_button
+
+SCREENS = ["home", "weather", "calendar", "motivation"]
+current_screen = 0
+last_interaction = time.time()
+AUTO_RETURN_TIME = 300  # seconds (5 minutes)
+
+def next_screen(direction):
+    global current_screen
+    current_screen = (current_screen + direction) % len(SCREENS)
+    draw_screen(SCREENS[current_screen])
+
+def handle_input():
+    global last_interaction
+
+    direction = read_encoder()
+    if direction != 0:
+        next_screen(direction)
+        last_interaction = time.time()
+
+    if read_button():
+        draw_screen(SCREENS[current_screen])
+        last_interaction = time.time()
+
+def check_inactivity():
+    global current_screen
+    if time.time() - last_interaction > AUTO_RETURN_TIME:
+        current_screen = 0
+        draw_screen("home")
+
+def main():
+    draw_screen("home")
+
+    while True:
+        handle_input()
+        check_inactivity()
+        time.sleep(0.1)
+
+main()
