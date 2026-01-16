@@ -38,7 +38,7 @@ Small SPI e-ink display
 
 Two rotary encoders with push buttons
 
-Rechargeable battery (with charging module)
+usb wall charger
 
 Custom wall-mounted case
 
