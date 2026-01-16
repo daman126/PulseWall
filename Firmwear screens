@@ -1,0 +1,27 @@
+# Screen rendering logic (placeholder)
+
+def draw_screen(screen_name):
+    if screen_name == "home":
+        draw_home()
+    elif screen_name == "weather":
+        draw_weather()
+    elif screen_name == "calendar":
+        draw_calendar()
+    elif screen_name == "motivation":
+        draw_motivation()
+
+def draw_home():
+    # Display time and date
+    pass
+
+def draw_weather():
+    # Display weather information
+    pass
+
+def draw_calendar():
+    # Display today's calendar events
+    pass
+
+def draw_motivation():
+    # Display motivational quote and time
+    pass
