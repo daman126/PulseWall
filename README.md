@@ -64,7 +64,10 @@ PulseWall/
 ├── docs/          # Diagrams and system documentation
 └── README.md
 
-Project Status
+Project Status<img width="626" height="463" alt="Screenshot 2026-01-16 184551" src="https://github.com/user-attachments/assets/53cb5c0c-e28e-485d-b4bf-f51365a9ae97" />
+
 
 This project is currently in the blueprint and design phase.
 All code and models are intended to demonstrate the planned system before applying for hardware funding.
+
+
