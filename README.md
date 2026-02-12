@@ -22,7 +22,8 @@ Rotary knob to switch between screens
 
 Secondary knob to scroll content (events or quotes)
 
-Automatic return to the home screen after inactivity
+Automatic return to the home screen after inactivity<img width="645" height="464" alt="Screenshot 2026-02-12 124917" src="https://github.com/user-attachments/assets/e49a5632-d3f3-4dec-a784-0f495c4c8c60" />
+
 
 Always-on operation using wall power
 
